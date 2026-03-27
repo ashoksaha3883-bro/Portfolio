@@ -27,57 +27,61 @@ const Footer = () => {
 
           {/* Form Container */}
           <div className="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 shadow-xl">
-            <form className="space-y-5" netlify  name='contact'>
-              <div>
-                <label htmlFor="name" className="block text-sm font-semibold text-slate-200 mb-2">Full Name</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
-                  </span>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full pl-10 pr-4 py-3 bg-slate-800 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all placeholder:text-slate-600 text-white"
-                    placeholder="John Doe"
-                    required
-                  />
-                </div>
-              </div>
+          <form 
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  className="space-y-5"
+>
+  {/* Required hidden input for Netlify */}
+  <input type="hidden" name="form-name" value="contact" />
 
-              <div>
-                <label htmlFor="email" className="block text-sm font-semibold text-slate-200 mb-2">Email Address</label>
-                <div className="relative">
-                  <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-slate-500">
-                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
-                  </span>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full pl-10 pr-4 py-3 bg-slate-800 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all placeholder:text-slate-600 text-white"
-                    placeholder="john@example.com"
-                    required
-                  />
-                </div>
-              </div>
+  <div>
+    <label className="block text-sm font-semibold text-slate-200 mb-2">
+      Full Name
+    </label>
+    <input
+      type="text"
+      name="name"
+      className="w-full pl-4 pr-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white"
+      placeholder="John Doe"
+      required
+    />
+  </div>
 
-              <div>
-                <label htmlFor="message" className="block text-sm font-semibold text-slate-200 mb-2">Your Message</label>
-                <textarea
-                  id="message"
-                  rows="4"
-                  className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all placeholder:text-slate-600 text-white"
-                  placeholder="How can we help you?"
-                  required
-                ></textarea>
-              </div>
+  <div>
+    <label className="block text-sm font-semibold text-slate-200 mb-2">
+      Email Address
+    </label>
+    <input
+      type="email"
+      name="email"
+      className="w-full pl-4 pr-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white"
+      placeholder="john@example.com"
+      required
+    />
+  </div>
 
-              <button 
-                type="submit" 
-                className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl shadow-lg shadow-blue-900/20 transition-all active:scale-[0.98]"
-              >
-                Send Message
-              </button>
-            </form>
+  <div>
+    <label className="block text-sm font-semibold text-slate-200 mb-2">
+      Your Message
+    </label>
+    <textarea
+      name="message"
+      rows="4"
+      className="w-full px-4 py-3 bg-slate-800 border border-slate-700 rounded-xl text-white"
+      placeholder="How can we help you?"
+      required
+    />
+  </div>
+
+  <button
+    type="submit"
+    className="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-3.5 rounded-xl"
+  >
+    Send Message
+  </button>
+</form>
           </div>
         </div>
 
