@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+
+
+.gradient {
+  background: linear-gradient(to right, #00aaa7, #7e42a7, #6600c5, #6070fd, #2a46ff, #0099ff, #008ead);
+  background-size: 200%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: animate-gradient 2.5s linear infinite;
+}
+
+@keyframes animate-gradient {
+  to { background-position: 200%; }
+}
+
+/* Scroll down arrow */
+.scroll-down::before,
+.scroll-down::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  transform: translate(-50%, -100%) rotate(45deg);
+  border: 2px solid lightgray;
+  border-top: transparent;
+  border-left: transparent;
+  animation: scroll-down 2s ease-in-out infinite;
+}
+
+.scroll-down::before {
+  top: 30%;
+  animation-delay: 0.5s;
+}
+
+@keyframes scroll-down {
+  0% { opacity: 0; }
+  30% { opacity: 1; }
+  60% { opacity: 1; }
+  100% { top: 90%; opacity: 0; }
+}
+
+@keyframes animate-gradient {
+  to {
+    background-position: 200%;
+  }
+}
+
+/* Scroll down animation */
+.scroll-dot {
+  animation: scroll-down 2s ease-in-out infinite;
+}
+
+@keyframes scroll-down {
+  0% {
+    top: 20%;
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    top: 90%;
+    opacity: 0;
+  }
+}
+
+/* Optional: Auto blur/display classes from original (if needed) */
+.autoBlur {
+  /* Add your blur effect */
+}
+.autoDisplay {
+  /* Add your display effect */
+}
+
