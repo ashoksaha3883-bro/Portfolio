@@ -27,7 +27,7 @@ const Footer = () => {
 
           {/* Form Container */}
           <div className="bg-slate-900/50 p-8 rounded-2xl border border-slate-800 shadow-xl">
-            <form className="space-y-5" netlify  name='contact us'>
+            <form className="space-y-5" netlify  name='contact'>
               <div>
                 <label htmlFor="name" className="block text-sm font-semibold text-slate-200 mb-2">Full Name</label>
                 <div className="relative">
