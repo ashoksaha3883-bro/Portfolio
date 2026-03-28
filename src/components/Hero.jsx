@@ -96,7 +96,7 @@ const Hero = () => {
           <h1 className="text-6xl text-white font-semibold max-w-[600px] leading-[70px] mt-10 mb-6">
             Welcome! I` am a 
             <span className="gradient"> Front-End Developer</span>
-               <p className="max-w-[550px] text-xl mb-10 mt-4 text-gray-300">  I'm a passionate fresher Front-End Developer who loves building clean and responsive websites using HTML, CSS, (Tailwind CSS), and React.js. I also have basic knowledge of backend concepts and API integration.</p>
+               <p className="max-w-[550px] text-xl mb-10 mt-4 text-gray-300">  I'm  passionate fresher Front-End Developer who intrestested building clean and responsive websites using HTML, CSS, (Tailwind CSS), and React.js. I also have basic knowledge of backend concepts and API integration.</p>
             
           </h1>
 
