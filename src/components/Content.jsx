@@ -7,7 +7,7 @@ const projects = [
     category: "(Front End / e-Commerce)",
     description: "E-Commerce is a shopping website designed to bring busy cloth online. Our mission is to provide a platform where you can easily buy clothes with work from home. ",
     image: "screen16.png", // Ensure this path is correct
-    link: "http://ashoksaha-site.surge.sh/",
+    link: "https://e-commerce-website-b7lngbqmw-ashok-kumar9262s-projects.vercel.app",
     techStack: [
       "React – frontend framework",
       "Tailwind CSS",
@@ -23,7 +23,7 @@ const projects = [
     category: "(Frontend / Fitness Website)",
     description: "Built a responsive gym website with React & Tailwind CSS, featuring a custom video player, BMI calculator, and Stripe/EmailJS-powered pricing—designed to make comparing fitness options simple and transparent.",
     image: "screen13.png", // Ensure you have this image or update the name
-    link: "https://gym-website-one-henna.vercel.app/",
+    link: "https://gym-website-h4lcm0thc-ashok-kumar9262s-projects.vercel.app",
     techStack: [
       "Media Handling",
       "Payment Integration",
