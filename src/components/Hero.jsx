@@ -121,7 +121,7 @@ const Hero = () => {
             muted
             playsInline
             src="hero-video.mp4"
-            className="w-full ml-[40%] h-320 hidden lg:block"
+            className="w-full ml-[40%] h-320 hidden lg:block min-[766px]:max-[1080px]:hidden"
           />
         </div>
 

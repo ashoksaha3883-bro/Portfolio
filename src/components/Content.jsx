@@ -112,23 +112,37 @@ const Content = () => {
                   )}
 
                   {/* Laptop Container */}
-                  <div 
-                    onClick={() => handleLaptopClick(project.id)}
-                    className="relative flex items-center justify-center cursor-pointer group transition-transform duration-500 hover:scale-105 "
-                  >
-                    {/* Laptop Frame */}
-                    <img
-                      src="leptop1.jpg"
-                      alt="Laptop frame"
-                      className="w-150 h-90 relative z-10 pointer-events-none  shadow-xl shadow-indigo-500/20 transition-all duration-300"
-                    />
+ <div 
+onClick={() => handleLaptopClick(project.id)}
+className="relative flex items-center justify-center cursor-pointer group transition-transform duration-500 hover:scale-105 "
+>
+{/* Laptop Frame */}
 
-                    {/* Project Screenshot inside the laptop */}
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="absolute top-[8%] left-1/2 -translate-x-1/2 w-[48%] h-[82%] object-contain z-10"
-                    />
+  {/* Laptop Frame - Hidden on mobile & tablet */}
+<div className="relative flex justify-center items-center">
+
+  {/* Mobile & Tablet → Only Project Image */}
+  <img
+    src={project.image}
+    alt={project.title}
+    className="block lg:hidden p-2 w-full max-w-[400px] rounded-lg shadow-lg"
+  />
+
+  {/* Laptop Frame → Only for Laptop/Desktop */}
+  <img
+    src="leptop1.jpg"
+    alt="Laptop frame"
+    className="hidden lg:block w-[500px] xl:w-[600px] relative z-10 pointer-events-none shadow-xl shadow-indigo-500/20"
+  />
+
+  {/* Project Screenshot inside laptop → Only for Laptop/Desktop */}
+  <img
+    src={project.image}
+    alt={project.title}
+    className="hidden lg:block  absolute top-[8%] left-1/2 -translate-x-1/2 w-[48%] h-[82%] object-contain z-20"
+  />
+
+</div>
 
                     {/* Hint text on Hover */}
                     {!isClicked && (
