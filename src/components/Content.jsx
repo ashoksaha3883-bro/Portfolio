@@ -132,7 +132,7 @@ className="relative flex items-center justify-center cursor-pointer group transi
   <img
     src="leptop1.jpg"
     alt="Laptop frame"
-    className="hidden lg:block w-[500px] xl:w-[600px] relative z-10 pointer-events-none shadow-xl shadow-indigo-500/20"
+    className="hidden lg:block w-[400px] xl:w-[600px] relative z-10 pointer-events-none shadow-xl shadow-indigo-500/20"
   />
 
   {/* Project Screenshot inside laptop → Only for Laptop/Desktop */}
