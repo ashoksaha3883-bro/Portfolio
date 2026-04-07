@@ -64,7 +64,7 @@ const Hero = () => {
       <section className="relative w-full h-screen flex items-center justify-between">
 
         {/* Background color ONLY for first screen */}
-        <div className="absolute inset-0 bg-[#001f7c38] -z-10"></div>
+        
 
         {/* Black Hole Video */}
         <div
@@ -121,7 +121,7 @@ const Hero = () => {
             muted
             playsInline
             src="hero-video.mp4"
-            className="w-full ml-[40%] h-320 hidden lg:block min-[766px]:max-[1080px]:hidden"
+            className="w-full ml-[50%] h-280 hidden lg:block min-[766px]:max-[1080px]:hidden"
           />
         </div>
 

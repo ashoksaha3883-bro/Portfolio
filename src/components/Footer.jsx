@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import emailjs from '@emailjs/browser'
 import { PiUsbBold } from 'react-icons/pi'
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const Footer = () => {
   const [name, setName] = useState('')
@@ -124,6 +125,43 @@ const Footer = () => {
           </div>
         </div>
 
+      </div>
+        <div className="max-w-6xl mt-4 mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+
+        {/* Left Section */}
+        <p className="text-sm text-gray-400">
+          © {new Date().getFullYear()} ashoksaha@3883gmail.com.
+        </p>
+
+        {/* Social Links */}
+        <div className="flex gap-6 mt-4 md:mt-0 text-2xl">
+
+          <a
+            href="https://github.com/ashoksaha3883-bro?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-gray-400 transition"
+          >
+            <FaGithub />
+          </a>
+
+          <a
+            href="ashoksaha@3883gmail.com"
+            className="hover:text-red-400 transition"
+          >
+            <FaEnvelope />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/ashok-kumar-981a5a395/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-400 transition"
+          >
+            <FaLinkedin />
+          </a>
+
+        </div>
       </div>
     </footer>
   )
